@@ -1,4 +1,4 @@
-.cabecalho__menu-hamburguer {
+.cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
@@ -7,8 +7,8 @@
     display: inline-block;
 }
 
-.cabecalho {
-    background-color: url(--branco);
+.cabeçalho {
+    background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,12 +43,17 @@
 
 .lista-menu__titulo {
     color: var(--laranja);
+    font-weight: 700;
 }
 
-.lista-menu__item {
+.lista-menu__link {
     background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
 }
